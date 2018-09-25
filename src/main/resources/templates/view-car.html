@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title> View Detail </title>
+	</head>
+	<body>
+	<div th:if="${car}">
+		<h3 th:text="${car.id}"></h3>
+		<h3 th:text="${car.brand}"></h3>
+		<h3 th:text="${car.type}"></h3>
+		<h3 th:text="${car.price}"></h3>
+		<h3 th:text="${car.amount}"></h3>
+	</div>
+	<div th:if="${error}">
+		<h3> Data Tidak Ditemukan </h3>
+	</div>
+	</body>
+</html>
